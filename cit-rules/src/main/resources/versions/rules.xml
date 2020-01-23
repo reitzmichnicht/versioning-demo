@@ -1,0 +1,17 @@
+<ruleset comparisonMethod="maven" xmlns="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://mojo.codehaus.org/versions-maven-plugin/rule/2.0.0 https://www.mojohaus.org/versions-maven-plugin/xsd/rule-2.0.0.xsd">
+    <ignoreVersions>
+        <ignoreVersion type="regex">.*(?i)(alpha|beta|b|eap)-?[\d\.]*</ignoreVersion>
+        <ignoreVersion type="regex">.*(?i)(rc|cr|pr)-?[\d]+</ignoreVersion>
+        <ignoreVersion type="regex">.*(jboss|redhat)-?[\d]+</ignoreVersion>
+        <ignoreVersion type="regex">.*(?i)(draft|preview)</ignoreVersion>
+    </ignoreVersions>
+    <rules>
+        <rule groupId="com.google.guava" comparisonMethod="maven">
+            <ignoreVersions>
+                <ignoreVersion type="regex">.*android</ignoreVersion>
+            </ignoreVersions>
+        </rule>
+    </rules>
+</ruleset>

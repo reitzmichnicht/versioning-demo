@@ -1,0 +1,14 @@
+target/
+pom.xml.*
+release.properties
+
+# Eclipse
+.classpath
+.project
+.settings/
+.tern-project
+.factorypath
+
+# IntelliJ
+*.iml
+.idea/*
